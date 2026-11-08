@@ -1,0 +1,271 @@
+.body {
+    height: 6000px;
+    background-color: black;
+    font-family: arial;
+    color: white;
+    margin: 0;
+}
+
+.body_container {
+    display: grid;
+    grid-template-columns: 175px 1fr 1fr;
+    height: 6000px;
+}
+
+/* Scrollbar Div */
+.scrollbar_container {
+    border-right: solid, 0.25px, grey;
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+}
+
+.scrollbar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+    row-gap: 30px;
+
+}
+
+.notification_container {
+    position: relative;
+}
+
+.notification_superscript {
+    position: absolute;
+    top: -3px;
+    right: 0px;
+    background-color: rgb(28, 130, 208);
+    height: 13px;
+    width: 13px;
+    font-size: 11px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.my_profile {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+
+/*Main Content Div*/
+.main_content {
+    border: solid, 0.25px, rgb(69, 64, 64);
+    border-right: none;
+}
+
+.header_main {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 42.85%;
+    border: solid, 0.25px, rgb(69, 64, 64);
+    border-right: none;
+    border-top: none;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.innerforyou {
+    height: 4px;
+    width: 100%;
+    background-color: rgb(28, 130, 208);
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+}
+
+.outerforyou {
+    position: relative;
+}
+
+.main_details {
+    margin-top: 51px;
+}
+
+.profiles_pro,
+.profiles {
+    padding: 10px 20px;
+}
+
+.profiles {
+    border: solid, 0.05px, rgb(69, 64, 64);
+    display: grid;
+    grid-template-columns: 50px 1fr;
+
+}
+
+.my_profile_main {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50px;
+
+}
+
+.my_profile_main_content_bottom,
+.my_profile_main_content_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button_post {
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 15px;
+    margin-right: 20px;
+    border: none;
+    
+}
+
+.handle {
+    color: rgb(130, 128, 128);
+    font-size: 15px;
+}
+.colorB:hover span,
+.colorB:hover path{
+     color:rgb(60, 169, 253);
+}
+.colorG:hover span,
+.colorG:hover path{
+     color:rgb(36, 147, 36);
+     
+}
+.colorP:hover span,
+.colorP:hover path{
+     color:rgb(198, 60, 136);
+}
+.colorB:hover,
+.colorG:hover,
+.colorP:hover{
+    background-color:rgba(154, 173, 109, 0.2);   
+    cursor:pointer;
+    z-index:100;
+     border-radius:3px;
+}
+
+/*SubMain Content Div*/
+.sub_main_content {
+    border: solid, 0.25px, rgb(69, 64, 64);
+    border-right: none;
+}
+
+.header_submain {
+    position: fixed;
+    border: none;
+    background-color: black;
+    top: 0;
+    width: 43%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    row-gap: -3px;
+}
+
+.search {
+    background-color: black;
+    color: rgb(199, 197, 197);
+    border-color: rgb(69, 64, 64);
+    height: 45px;
+    width: 340px;
+    border-style: solid;
+    border-width: 0.25px;
+    border-left: none;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.search_button {
+    height: 45px;
+    width: 30px;
+    border-style: solid;
+    border-width: 0.25px;
+    border-color: rgb(69, 64, 64);
+    border-right: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.grok_button_holder {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+
+.submain_details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 51px;
+}
+
+.Sub_to_Premium,
+.Live_on_x,
+.News,
+.Whats_happening,
+.Who_to_follow {
+
+    background-color: black;
+    padding-left: 10px;
+    border: solid 0.25px rgb(69, 64, 64);
+    border-radius: 8px;
+    width: 371px;
+    padding-bottom: 5px;
+
+}
+
+.subscribe,
+.follow,
+.livex {
+    padding: 5px 10px;
+    background-color: rgb(60, 169, 253);
+    border-radius: 15px;
+    border: none;
+    font-size: bold;
+    color: white;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.subscribe:hover {
+    opacity: 0.5;
+}
+
+.who_to_follow_divs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button.follow {
+    background-color: white;
+    color: black;
+    height: 30px;
+}
+
+button.livex {
+    background-color: black;
+    border: solid 1.5px palevioletred;
+}

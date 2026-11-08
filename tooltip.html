@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToolTips</title>
+    <style>
+      [role="tooltip"] {
+        display: none;
+      }
+      button:hover + [role="tooltip"],
+      button:focus + [role="tooltip"] {
+        display: inline-block;
+        background-color: aqua;
+      }
+      .screw:hover + .my {
+        color: white;
+        background-color: rgba(17, 233, 24, 0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <button aria-describedby="tip1" class="my">Hover me</button>
+    <span role="tooltip" id="tip1" class="tooltip-text">tooltip</span>
+
+    <span class="screw" role="soul">killmonger</span>
+    <button class="my" role="soul">YOUNING</button>
+  </body>
+</html>
